@@ -1,7 +1,7 @@
 
-from flask import Flask, render_template, url_for, request 
 import requests
 import pandas as pd
+from flask import Flask, render_template, url_for, request
 from bokeh.models import ColumnDataSource, HoverTool
 from bokeh.plotting import figure, graph, output_file, show
 from bokeh.embed import components

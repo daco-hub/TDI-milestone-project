@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+<title> Stock Price Plot </title>
+{% endblock head %}
+
+{% block body %} 
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-left">
+        <h2>Stock Price Plot</h2>
+        <h3>Chose a ticker, the app will plot its recents closing prices.</h3>
+        <h4>
+          <form id='input_1' action='/' method='POST' >
+            <p>
+              Ticker: <input type='text' name='ticker_input' placeholder='GOOG' />
+            </p>
+            <p>
+              <input type='submit' value='Submit' />
+            </p>
+          </form>
+        </h4>
+      </div>
+    </div>
+  </div>
+{% endblock body %}

@@ -28,7 +28,7 @@ def get_graph(df, ticker):
     source = ColumnDataSource(df)
     selection = 'close'
 
-    p = figure(x_axis_type='datetime', x_axis_label='Date', title='Stock Price',
+    p = figure(x_axis_type='datetime', x_axis_label='Date', title='Stock price: ' + ticker,
                plot_width=800, plot_height=600)
 
     p.line('Date', selection, source=source, legend_label=ticker+' : '+selection)
